@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "IFM node server",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server",
+    "data:import": "node seed_data/scripts/seeder",
+    "data:destroy": "node seed_data/scripts/seeder -d"
+  },
+  "author": "Rajesh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.0.0-alpha.8",
+    "mongoose": "^6.2.4",
+    "colors": "^1.4.0",
+    "datauri": "^3.0.0",
+    "dotenv": "^8.2.0",
+    "express-async-handler": "^1.1.4",
+    "fast-csv": "^4.3.6",
+    "firebase-admin": "^9.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "redis": "^3.0.2",
+    "node-geocoder": "^3.27.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
